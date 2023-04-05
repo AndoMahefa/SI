@@ -1,0 +1,7 @@
+table{align-items: center;}
+td{
+  padding: 5px ;
+  align-items: center;
+  text-align: center;
+  border:1px solid black;
+}

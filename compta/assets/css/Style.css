@@ -1,0 +1,148 @@
+@font-face {
+    font-family: monospace;
+    src: url("./Poppins-Light.ttf");
+}
+.contain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contain-left h1{
+    font-family: monospace;
+    color: rgb(69 188 133);
+}
+.contain-left h4{
+    font-family: monospace;
+    font-weight: lighter;
+    color: grey;
+}
+.contain .contain-left{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contain .contain-left form{
+    display: flex;
+    flex-direction: column;
+}
+.contain .contain-left form input{
+  outline: none;
+  padding: 12px;
+  background: #e7e4e417;
+  border: none;
+  margin-top: 20px;
+}
+.contain .contain-left form input[type="submit"]{
+    padding: 10px;
+    border: none;
+    background: rgb(89 228 168);
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.contain .contain-left form input[type="submit"]:hover{
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contain .contain-left span {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.contain .contain-left .google{
+    margin-top: 23px;
+    border: 1px solid rgb(187, 187, 187);
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 13px;
+    padding: 8px;
+}
+.contain .contain-left .sign{
+    font-family: monospace;
+    font-weight: lighter;
+    color: gray;
+    margin-top: 30px;
+}
+.contain .contain-left .sign a{
+    text-decoration: none;
+    color: blue;
+}
+.contain .contain-right{
+    padding: 20px;
+}
+.contain .contain-right img{
+    border-radius: 8px;
+    height: 600px;
+}
+
+@media screen and (max-width:1200px) {
+    .contain .contain-right{
+        display: none;
+    }
+    .contain .contain-left{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.filter-project-item.show {
+    transition: 1s;
+    animation: show 2s ;
+}
+@keyframes show {
+    0%{
+        transition: 1s;
+        opacity: .25;
+    }
+    50%{
+        transition: 5s ;
+        opacity: .75;
+    }
+    100%{
+         backface-visibility: visible;
+        visibility: visible;
+    }
+}
+.filter-project-item.show  input{
+    transition: 1s;
+    animation: input 2s;
+}
+@keyframes input {
+    0%{
+        transition: .5s;
+        width: 30%
+    }
+    50%{
+        transition: .5s;
+        width: 60%;
+    }
+    100%{
+        transition: .5s;
+        width: 100%;
+    }
+}
+.filter-project-item.hide {
+   display: none;
+}
+.filter-project-item.hide input{
+    width: 0%;
+    backface-visibility: hidden;
+    visibility: hidden;
+}
+.filter-project-item.hide h4{
+    width: 0%;
+    backface-visibility: hidden;
+    visibility: hidden;
+}
+.filter-project-item.hide h1{
+    width: 0%;
+    backface-visibility: hidden;
+    visibility: hidden;
+}
+.filter-project-item.hide span{
+    width: 0%;
+    backface-visibility: hidden;
+    visibility: hidden;
+}
