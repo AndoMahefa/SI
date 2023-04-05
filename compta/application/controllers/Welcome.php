@@ -3,15 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
     public function index() {
-        $this->load->view('Insert_pc');
+        $this->load->view('insert/Insert_pc');
     }
 
     public function devise() {
-        $this->load->view('Insert_devise');
+        $this->load->view('insert/Insert_devise');
     }
 
     public function plan_tiers() {
-        $this->load->view('Insert_plan_tiers');
+        $this->load->view('insert/Insert_plan_tiers');
     }
 
     public function ecriture() {
