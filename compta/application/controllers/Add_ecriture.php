@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Add_ecriture extends CI_Controller {
-    public Function index(){
+    public Function index() {
         $this->load->model("insertall_model");
 
         $code =  $this->input->post('code_journal'); 
