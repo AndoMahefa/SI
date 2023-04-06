@@ -7,7 +7,7 @@ class Home_controller extends CI_Controller {
 	}
 
 	public function add_ecriture(){
-		$this->load->View("insert/Ecriture") ; 
+		$this->load->view("Ecriture") ; 
 	}
 
 	public function show_pc(){

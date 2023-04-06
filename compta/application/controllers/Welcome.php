@@ -64,14 +64,4 @@ class Welcome extends CI_Controller {
         }
 
     }
-
-    public function insert_csv() {
-        $this->load->model('Csv_model');
-        $this->Csv_model->insert_all_datas("plan_comptable");
-    }
-
-    public function generate_csv() {
-        $this->load->model('Csv_model');
-        $this->Csv_model->create_csv("code_journal");
-    }
 }
